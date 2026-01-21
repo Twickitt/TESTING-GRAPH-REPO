@@ -1,12 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
 project(TestingGraph)
 
-add_subdirectory(Graph-CPP)
+add_subdirectory(Graph-CPP_LAB2)
 #add_subdirectory(Tests/)
 
 add_executable(Testing_prog_graph source/graph_test.cpp)
 
-target_include_directories(Testing_prog_graph PUBLIC ${CMAKE_SOURCE_DIR}/Graph-CPP_LAB2/include)
 #target_link_libraries(Testing_prog_graph PUBLIC Graph-CPP_LAB2 gtest_main)
 target_link_libraries(Testing_prog_graph PUBLIC Graph-CPP_LAB2)
 #target_link_libraries(Testing_prog_graph PUBLIC Graph-CPP_LAB2 GTest::gtest_main)
